@@ -11,8 +11,7 @@ class Listview2Screen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Listview Tipo 2"),
-        elevation: 0,
-        backgroundColor: Colors.indigo,
+        backgroundColor: const Color.fromARGB(255, 36, 186, 28),
       ),
       body:  ListView.separated(
         itemCount: options.length,
