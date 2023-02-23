@@ -12,16 +12,18 @@ class AppRoutes {
     MenuOption(route: 'alrt', name: 'Alrtas', screen: const AlertScreen(), icon: Icons.add_alert),
     MenuOption(route: 'card', name: 'Cartas', screen: const CardScreen(), icon: Icons.credit_card),
     MenuOption(route: 'avatar', name: 'Avatar', screen: const AvatarScreen(), icon: Icons.supervisor_account_outlined),
-    MenuOption(route: 'animated', name: 'Animated Container', screen: const AnimatedScreen(), icon: Icons.place_outlined),
+    MenuOption(route: 'animated', name: 'Animated Container', screen: const AnimatedScreen(), icon: Icons.play_circle_outline),
+    MenuOption(route: 'inputs', name: 'Text Inputs', screen: const InputsScreen(), icon: Icons.input_rounded),
 
   ];
 
   static Map<String, Widget Function(BuildContext)> getsAppRoetes() {
 
     Map<String, Widget Function(BuildContext)> appRoutes = {};
-
+      appRoutes.addAll({'home': (BuildContext context) => const HomeScreen()});
+    
     for (final option in menuOptions) {
-      appRoutes.addAll({ 'home' : (BuildContext context) => const HomeScreen() });
+      appRoutes.addAll({ option.route : (BuildContext context) => option.screen });
     }
     return appRoutes;
   }
