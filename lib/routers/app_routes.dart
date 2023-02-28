@@ -13,7 +13,9 @@ class AppRoutes {
     MenuOption(route: 'card', name: 'Cartas', screen: const CardScreen(), icon: Icons.credit_card),
     MenuOption(route: 'avatar', name: 'Avatar', screen: const AvatarScreen(), icon: Icons.supervisor_account_outlined),
     MenuOption(route: 'animated', name: 'Animated Container', screen: const AnimatedScreen(), icon: Icons.play_circle_outline),
-    MenuOption(route: 'inputs', name: 'Text Inputs', screen: const InputsScreen(), icon: Icons.input_rounded),
+    MenuOption(route: 'inputs', name: 'Text Inputs', screen: const InputsScreen(),icon: Icons.input_rounded),
+    MenuOption(route: 'slider', name: 'Slider && Check', screen: const SliderScreen(), icon: Icons.slideshow_outlined),
+    MenuOption(route: 'listviewbilder', name: 'InfiniScroll && Pull to refresh', screen: const ListviewBilderScreen(), icon: Icons.bike_scooter_outlined),
 
   ];
 

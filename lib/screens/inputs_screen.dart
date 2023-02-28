@@ -51,7 +51,7 @@ class InputsScreen extends StatelessWidget {
                             DropdownMenuItem(value: 'Jr. Developer', child: Text('Jr. Developer')),
                         ], 
                         onChanged: (value) {
-                          print(value);
+                          //print(value);
                           formValues['role'] = value ?? 'Amin';
                         },
                         ),
@@ -62,9 +62,9 @@ class InputsScreen extends StatelessWidget {
                           FocusScope.of(context).requestFocus(FocusNode());
 
                           if (!myFormKey.currentState!.validate()) {
-                            print('No valido');
+                           // print('No valido');
                           }
-                          print(formValues);
+                         // print(formValues);
                         }, 
                         child: const SizedBox(
                           width: double.infinity,
